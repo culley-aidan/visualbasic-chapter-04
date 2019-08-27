@@ -26,6 +26,7 @@ Partial Class frmBike
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblCostHeading = New System.Windows.Forms.Label()
         Me.lblNumberOfDays = New System.Windows.Forms.Label()
+        Me.txtNumberOfDays = New System.Windows.Forms.TextBox()
         CType(Me.picBikes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,11 +62,20 @@ Partial Class frmBike
         '
         Me.lblNumberOfDays.AutoSize = True
         Me.lblNumberOfDays.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumberOfDays.Location = New System.Drawing.Point(44, 108)
+        Me.lblNumberOfDays.Location = New System.Drawing.Point(67, 108)
         Me.lblNumberOfDays.Name = "lblNumberOfDays"
         Me.lblNumberOfDays.Size = New System.Drawing.Size(192, 21)
         Me.lblNumberOfDays.TabIndex = 3
         Me.lblNumberOfDays.Text = "Number of Rental Days:"
+        '
+        'txtNumberOfDays
+        '
+        Me.txtNumberOfDays.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNumberOfDays.Location = New System.Drawing.Point(268, 105)
+        Me.txtNumberOfDays.Name = "txtNumberOfDays"
+        Me.txtNumberOfDays.Size = New System.Drawing.Size(32, 27)
+        Me.txtNumberOfDays.TabIndex = 4
+        Me.txtNumberOfDays.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'frmBike
         '
@@ -73,6 +83,7 @@ Partial Class frmBike
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.txtNumberOfDays)
         Me.Controls.Add(Me.lblNumberOfDays)
         Me.Controls.Add(Me.lblCostHeading)
         Me.Controls.Add(Me.lblHeading)
@@ -89,4 +100,5 @@ Partial Class frmBike
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblCostHeading As Label
     Friend WithEvents lblNumberOfDays As Label
+    Friend WithEvents txtNumberOfDays As TextBox
 End Class
