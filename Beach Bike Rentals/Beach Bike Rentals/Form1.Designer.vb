@@ -28,6 +28,7 @@ Partial Class frmBike
         Me.lblNumberOfDays = New System.Windows.Forms.Label()
         Me.txtNumberOfDays = New System.Windows.Forms.TextBox()
         Me.lblTotalLabel = New System.Windows.Forms.Label()
+        Me.lblTotalCost = New System.Windows.Forms.Label()
         CType(Me.picBikes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -88,12 +89,23 @@ Partial Class frmBike
         Me.lblTotalLabel.TabIndex = 5
         Me.lblTotalLabel.Text = "Total Cost of Bike Rental:"
         '
+        'lblTotalCost
+        '
+        Me.lblTotalCost.AutoSize = True
+        Me.lblTotalCost.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCost.Location = New System.Drawing.Point(264, 135)
+        Me.lblTotalCost.Name = "lblTotalCost"
+        Me.lblTotalCost.Size = New System.Drawing.Size(68, 21)
+        Me.lblTotalCost.TabIndex = 6
+        Me.lblTotalCost.Text = "$888.88"
+        '
         'frmBike
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblTotalLabel)
         Me.Controls.Add(Me.txtNumberOfDays)
         Me.Controls.Add(Me.lblNumberOfDays)
@@ -114,4 +126,5 @@ Partial Class frmBike
     Friend WithEvents lblNumberOfDays As Label
     Friend WithEvents txtNumberOfDays As TextBox
     Friend WithEvents lblTotalLabel As Label
+    Friend WithEvents lblTotalCost As Label
 End Class
