@@ -104,33 +104,36 @@ Partial Class frmBike
         '
         'btnCost
         '
+        Me.btnCost.BackColor = System.Drawing.Color.Gold
         Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCost.Location = New System.Drawing.Point(21, 192)
         Me.btnCost.Name = "btnCost"
         Me.btnCost.Size = New System.Drawing.Size(117, 30)
         Me.btnCost.TabIndex = 7
         Me.btnCost.Text = "Find Cost"
-        Me.btnCost.UseVisualStyleBackColor = True
+        Me.btnCost.UseVisualStyleBackColor = False
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.Gold
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(144, 192)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(117, 30)
         Me.btnClear.TabIndex = 8
         Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.Gold
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(267, 192)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(117, 30)
         Me.btnExit.TabIndex = 9
         Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'frmBike
         '
