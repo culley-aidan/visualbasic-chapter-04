@@ -23,6 +23,7 @@ Partial Class frmBike
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.picBikes = New System.Windows.Forms.PictureBox()
+        Me.lblHeading = New System.Windows.Forms.Label()
         CType(Me.picBikes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -34,19 +35,32 @@ Partial Class frmBike
         Me.picBikes.TabIndex = 0
         Me.picBikes.TabStop = False
         '
+        'lblHeading
+        '
+        Me.lblHeading.AutoSize = True
+        Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.Location = New System.Drawing.Point(46, 34)
+        Me.lblHeading.Name = "lblHeading"
+        Me.lblHeading.Size = New System.Drawing.Size(247, 27)
+        Me.lblHeading.TabIndex = 1
+        Me.lblHeading.Text = "Beach Bike Rentals"
+        '
         'frmBike
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.picBikes)
         Me.Name = "frmBike"
         Me.Text = "Beach Bike Rentals"
         CType(Me.picBikes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents picBikes As PictureBox
+    Friend WithEvents lblHeading As Label
 End Class
