@@ -30,6 +30,7 @@ Partial Class frmBike
         Me.lblTotalLabel = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.btnCost = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         CType(Me.picBikes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -103,12 +104,22 @@ Partial Class frmBike
         'btnCost
         '
         Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCost.Location = New System.Drawing.Point(27, 190)
+        Me.btnCost.Location = New System.Drawing.Point(16, 191)
         Me.btnCost.Name = "btnCost"
         Me.btnCost.Size = New System.Drawing.Size(117, 30)
         Me.btnCost.TabIndex = 7
         Me.btnCost.Text = "Find Cost"
         Me.btnCost.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(151, 191)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(117, 30)
+        Me.btnClear.TabIndex = 8
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'frmBike
         '
@@ -116,6 +127,7 @@ Partial Class frmBike
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCost)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblTotalLabel)
@@ -140,4 +152,5 @@ Partial Class frmBike
     Friend WithEvents lblTotalLabel As Label
     Friend WithEvents lblTotalCost As Label
     Friend WithEvents btnCost As Button
+    Friend WithEvents btnClear As Button
 End Class
