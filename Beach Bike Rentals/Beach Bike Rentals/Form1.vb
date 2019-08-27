@@ -4,7 +4,7 @@
 ' Purpose:  This application calculates and displays the total
 '           cost of renting a bike for a specified number of days.
 
-
+Option Strict On
 Public Class frmBike
     Private Sub BtnCost_Click(sender As Object, e As EventArgs) Handles btnCost.Click
 
