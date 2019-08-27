@@ -37,9 +37,11 @@ Partial Class frmBike
         '
         'picBikes
         '
+        Me.picBikes.Image = Global.Beach_Bike_Rentals.My.Resources.Resources.bike
         Me.picBikes.Location = New System.Drawing.Point(-1, 256)
         Me.picBikes.Name = "picBikes"
         Me.picBikes.Size = New System.Drawing.Size(407, 206)
+        Me.picBikes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picBikes.TabIndex = 0
         Me.picBikes.TabStop = False
         '
