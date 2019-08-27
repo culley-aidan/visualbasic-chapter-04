@@ -137,9 +137,11 @@ Partial Class frmBike
         '
         'frmBike
         '
+        Me.AcceptButton = Me.btnCost
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(404, 461)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
