@@ -39,7 +39,7 @@ Partial Class frmBike
         '
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeading.Location = New System.Drawing.Point(46, 34)
+        Me.lblHeading.Location = New System.Drawing.Point(79, 34)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(247, 27)
         Me.lblHeading.TabIndex = 1
