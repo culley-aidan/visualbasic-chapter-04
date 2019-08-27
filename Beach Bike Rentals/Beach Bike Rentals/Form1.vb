@@ -23,4 +23,5 @@ Public Class frmBike
         decTotalCost = intNumberOfDays * _cdecPricePerDay
         lblTotalCost.Text = decTotalCost.ToString("C")
     End Sub
+
 End Class
