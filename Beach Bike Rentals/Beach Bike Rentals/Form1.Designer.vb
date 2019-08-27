@@ -29,6 +29,7 @@ Partial Class frmBike
         Me.txtNumberOfDays = New System.Windows.Forms.TextBox()
         Me.lblTotalLabel = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
+        Me.btnCost = New System.Windows.Forms.Button()
         CType(Me.picBikes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -64,7 +65,7 @@ Partial Class frmBike
         '
         Me.lblNumberOfDays.AutoSize = True
         Me.lblNumberOfDays.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumberOfDays.Location = New System.Drawing.Point(67, 108)
+        Me.lblNumberOfDays.Location = New System.Drawing.Point(67, 104)
         Me.lblNumberOfDays.Name = "lblNumberOfDays"
         Me.lblNumberOfDays.Size = New System.Drawing.Size(192, 21)
         Me.lblNumberOfDays.TabIndex = 3
@@ -73,7 +74,7 @@ Partial Class frmBike
         'txtNumberOfDays
         '
         Me.txtNumberOfDays.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNumberOfDays.Location = New System.Drawing.Point(268, 105)
+        Me.txtNumberOfDays.Location = New System.Drawing.Point(268, 101)
         Me.txtNumberOfDays.Name = "txtNumberOfDays"
         Me.txtNumberOfDays.Size = New System.Drawing.Size(32, 27)
         Me.txtNumberOfDays.TabIndex = 4
@@ -83,7 +84,7 @@ Partial Class frmBike
         '
         Me.lblTotalLabel.AutoSize = True
         Me.lblTotalLabel.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalLabel.Location = New System.Drawing.Point(67, 135)
+        Me.lblTotalLabel.Location = New System.Drawing.Point(67, 131)
         Me.lblTotalLabel.Name = "lblTotalLabel"
         Me.lblTotalLabel.Size = New System.Drawing.Size(201, 21)
         Me.lblTotalLabel.TabIndex = 5
@@ -93,11 +94,21 @@ Partial Class frmBike
         '
         Me.lblTotalCost.AutoSize = True
         Me.lblTotalCost.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalCost.Location = New System.Drawing.Point(264, 135)
+        Me.lblTotalCost.Location = New System.Drawing.Point(264, 131)
         Me.lblTotalCost.Name = "lblTotalCost"
         Me.lblTotalCost.Size = New System.Drawing.Size(68, 21)
         Me.lblTotalCost.TabIndex = 6
         Me.lblTotalCost.Text = "$888.88"
+        '
+        'btnCost
+        '
+        Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCost.Location = New System.Drawing.Point(27, 190)
+        Me.btnCost.Name = "btnCost"
+        Me.btnCost.Size = New System.Drawing.Size(117, 30)
+        Me.btnCost.TabIndex = 7
+        Me.btnCost.Text = "Find Cost"
+        Me.btnCost.UseVisualStyleBackColor = True
         '
         'frmBike
         '
@@ -105,6 +116,7 @@ Partial Class frmBike
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.btnCost)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblTotalLabel)
         Me.Controls.Add(Me.txtNumberOfDays)
@@ -127,4 +139,5 @@ Partial Class frmBike
     Friend WithEvents txtNumberOfDays As TextBox
     Friend WithEvents lblTotalLabel As Label
     Friend WithEvents lblTotalCost As Label
+    Friend WithEvents btnCost As Button
 End Class
