@@ -25,6 +25,7 @@ Partial Class frmBike
         Me.picBikes = New System.Windows.Forms.PictureBox()
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblCostHeading = New System.Windows.Forms.Label()
+        Me.lblNumberOfDays = New System.Windows.Forms.Label()
         CType(Me.picBikes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -56,12 +57,23 @@ Partial Class frmBike
         Me.lblCostHeading.TabIndex = 2
         Me.lblCostHeading.Text = "$X.XX per Day"
         '
+        'lblNumberOfDays
+        '
+        Me.lblNumberOfDays.AutoSize = True
+        Me.lblNumberOfDays.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumberOfDays.Location = New System.Drawing.Point(44, 108)
+        Me.lblNumberOfDays.Name = "lblNumberOfDays"
+        Me.lblNumberOfDays.Size = New System.Drawing.Size(192, 21)
+        Me.lblNumberOfDays.TabIndex = 3
+        Me.lblNumberOfDays.Text = "Number of Rental Days:"
+        '
         'frmBike
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.lblNumberOfDays)
         Me.Controls.Add(Me.lblCostHeading)
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.picBikes)
@@ -76,4 +88,5 @@ Partial Class frmBike
     Friend WithEvents picBikes As PictureBox
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblCostHeading As Label
+    Friend WithEvents lblNumberOfDays As Label
 End Class
