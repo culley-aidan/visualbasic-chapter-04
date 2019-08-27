@@ -22,7 +22,17 @@ Partial Class frmBike
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.picBikes = New System.Windows.Forms.PictureBox()
+        CType(Me.picBikes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'picBikes
+        '
+        Me.picBikes.Location = New System.Drawing.Point(-1, 256)
+        Me.picBikes.Name = "picBikes"
+        Me.picBikes.Size = New System.Drawing.Size(407, 206)
+        Me.picBikes.TabIndex = 0
+        Me.picBikes.TabStop = False
         '
         'frmBike
         '
@@ -30,10 +40,13 @@ Partial Class frmBike
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.picBikes)
         Me.Name = "frmBike"
         Me.Text = "Beach Bike Rentals"
+        CType(Me.picBikes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents picBikes As PictureBox
 End Class
