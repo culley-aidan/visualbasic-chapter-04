@@ -6,7 +6,21 @@
 
 Option Strict On
 Public Class frmBike
-    Private Sub BtnCost_Click(sender As Object, e As EventArgs) Handles btnCost.Click
 
+    ' Cost per bike rental
+    Const _cdecPricePerDay As Decimal = 9.95D
+
+    Private Sub BtnCost_Click(sender As Object, e As EventArgs) Handles btnCost.Click
+        ' Executes when btnCost is clicked
+        ' Calculates and displays cost per day of bike rental
+
+        Dim strNumberOfDays As String
+        Dim intNumberOfDays As Integer
+        Dim decTotalCost As Decimal
+
+        strNumberOfDays = txtNumberOfDays.Text
+        intNumberOfDays = Convert.ToInt32(strNumberOfDays)
+        decTotalCost = intNumberOfDays * _cdecPricePerDay
+        lblTotalCost.Text = decTotalCost.ToString("C")
     End Sub
 End Class
