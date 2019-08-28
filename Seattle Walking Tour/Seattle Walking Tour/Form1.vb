@@ -23,4 +23,14 @@ Public Class frmSeattle
         decTotalCost = (intNumberOfTickets * _ticketPricePerTicket) + _bookingFee
         lblTotalCost.Text = decTotalCost.ToString("C")
     End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' Executes when btnClear is clicked
+        ' Clears text property
+
+        txtTicketCount.Clear()
+        lblTotalCost.Text = ""
+        txtTicketCount.Focus()
+    End Sub
+
 End Class
