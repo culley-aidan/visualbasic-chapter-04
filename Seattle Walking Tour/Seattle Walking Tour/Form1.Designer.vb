@@ -39,9 +39,10 @@ Partial Class frmSeattle
         'lblCostHeading
         '
         Me.lblCostHeading.AutoSize = True
-        Me.lblCostHeading.Location = New System.Drawing.Point(101, 159)
+        Me.lblCostHeading.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostHeading.Location = New System.Drawing.Point(143, 67)
         Me.lblCostHeading.Name = "lblCostHeading"
-        Me.lblCostHeading.Size = New System.Drawing.Size(92, 13)
+        Me.lblCostHeading.Size = New System.Drawing.Size(137, 21)
         Me.lblCostHeading.TabIndex = 1
         Me.lblCostHeading.Text = "$14.99 Per Ticket"
         '
