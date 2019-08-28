@@ -28,7 +28,7 @@ Public Class frmBike
         ' Executes when Clear is clicked
         ' Displays cost heading clears text property
 
-        lblCostHeading.Text = _cdecPricePerDay.ToString("C") & "per Day"
+        lblCostHeading.Text = _cdecPricePerDay.ToString("C") & " per Day"
         lblTotalCost.Text = ""
         txtNumberOfDays.Focus()
     End Sub
@@ -39,4 +39,5 @@ Public Class frmBike
 
         Close()
     End Sub
+
 End Class
