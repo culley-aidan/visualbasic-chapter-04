@@ -25,6 +25,7 @@ Partial Class frmSeattle
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblCostHeading = New System.Windows.Forms.Label()
         Me.lblTicketCount = New System.Windows.Forms.Label()
+        Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -51,17 +52,28 @@ Partial Class frmSeattle
         '
         Me.lblTicketCount.AutoSize = True
         Me.lblTicketCount.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTicketCount.Location = New System.Drawing.Point(30, 178)
+        Me.lblTicketCount.Location = New System.Drawing.Point(79, 178)
         Me.lblTicketCount.Name = "lblTicketCount"
         Me.lblTicketCount.Size = New System.Drawing.Size(201, 21)
         Me.lblTicketCount.TabIndex = 2
         Me.lblTicketCount.Text = "Enter Number of Tickets: "
+        '
+        'lblTotalCost
+        '
+        Me.lblTotalCost.AutoSize = True
+        Me.lblTotalCost.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCost.Location = New System.Drawing.Point(79, 233)
+        Me.lblTotalCost.Name = "lblTotalCost"
+        Me.lblTotalCost.Size = New System.Drawing.Size(164, 21)
+        Me.lblTotalCost.TabIndex = 3
+        Me.lblTotalCost.Text = "Total Cost of Tickets"
         '
         'frmSeattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblTicketCount)
         Me.Controls.Add(Me.lblCostHeading)
         Me.Controls.Add(Me.lblHeading)
@@ -75,4 +87,5 @@ Partial Class frmSeattle
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblCostHeading As Label
     Friend WithEvents lblTicketCount As Label
+    Friend WithEvents lblTotalCost As Label
 End Class
