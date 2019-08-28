@@ -53,9 +53,9 @@ Partial Class frmSeattle
         Me.lblCostHeading.ForeColor = System.Drawing.Color.White
         Me.lblCostHeading.Location = New System.Drawing.Point(143, 80)
         Me.lblCostHeading.Name = "lblCostHeading"
-        Me.lblCostHeading.Size = New System.Drawing.Size(137, 21)
+        Me.lblCostHeading.Size = New System.Drawing.Size(128, 21)
         Me.lblCostHeading.TabIndex = 1
-        Me.lblCostHeading.Text = "$14.99 Per Ticket"
+        Me.lblCostHeading.Text = "$X.XX Per Ticket"
         '
         'lblTicketCount
         '

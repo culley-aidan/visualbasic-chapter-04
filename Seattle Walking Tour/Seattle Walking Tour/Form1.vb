@@ -33,4 +33,13 @@ Public Class frmSeattle
         txtTicketCount.Focus()
     End Sub
 
+    Private Sub FrmSeattle_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Executes when the form is loaded
+        ' displays cost heading and clears the text property
+
+        lblCostHeading.Text = _ticketPricePerTicket.ToString("C") & " Per Ticket"
+        lblTotalCost.Text = ""
+        txtTicketCount.Focus()
+    End Sub
+
 End Class
