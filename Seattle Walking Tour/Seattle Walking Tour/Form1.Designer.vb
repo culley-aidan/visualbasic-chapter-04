@@ -39,6 +39,7 @@ Partial Class frmSeattle
         '
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.ForeColor = System.Drawing.Color.White
         Me.lblHeading.Location = New System.Drawing.Point(23, 33)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(373, 27)
@@ -49,6 +50,7 @@ Partial Class frmSeattle
         '
         Me.lblCostHeading.AutoSize = True
         Me.lblCostHeading.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostHeading.ForeColor = System.Drawing.Color.White
         Me.lblCostHeading.Location = New System.Drawing.Point(143, 80)
         Me.lblCostHeading.Name = "lblCostHeading"
         Me.lblCostHeading.Size = New System.Drawing.Size(137, 21)
@@ -59,6 +61,7 @@ Partial Class frmSeattle
         '
         Me.lblTicketCount.AutoSize = True
         Me.lblTicketCount.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTicketCount.ForeColor = System.Drawing.Color.White
         Me.lblTicketCount.Location = New System.Drawing.Point(79, 178)
         Me.lblTicketCount.Name = "lblTicketCount"
         Me.lblTicketCount.Size = New System.Drawing.Size(201, 21)
@@ -69,6 +72,7 @@ Partial Class frmSeattle
         '
         Me.lblTotalLabel.AutoSize = True
         Me.lblTotalLabel.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalLabel.ForeColor = System.Drawing.Color.White
         Me.lblTotalLabel.Location = New System.Drawing.Point(79, 233)
         Me.lblTotalLabel.Name = "lblTotalLabel"
         Me.lblTotalLabel.Size = New System.Drawing.Size(164, 21)
@@ -88,6 +92,7 @@ Partial Class frmSeattle
         '
         Me.lblTotalCost.AutoSize = True
         Me.lblTotalCost.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCost.ForeColor = System.Drawing.Color.White
         Me.lblTotalCost.Location = New System.Drawing.Point(282, 233)
         Me.lblTotalCost.Name = "lblTotalCost"
         Me.lblTotalCost.Size = New System.Drawing.Size(59, 21)
@@ -96,33 +101,36 @@ Partial Class frmSeattle
         '
         'btnCost
         '
+        Me.btnCost.BackColor = System.Drawing.Color.White
         Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCost.Location = New System.Drawing.Point(45, 316)
         Me.btnCost.Name = "btnCost"
         Me.btnCost.Size = New System.Drawing.Size(75, 55)
         Me.btnCost.TabIndex = 6
         Me.btnCost.Text = "Display Cost"
-        Me.btnCost.UseVisualStyleBackColor = True
+        Me.btnCost.UseVisualStyleBackColor = False
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.White
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(168, 316)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 55)
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.White
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(295, 316)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 55)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'picSeattle
         '
@@ -138,6 +146,7 @@ Partial Class frmSeattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.picSeattle)
         Me.Controls.Add(Me.btnExit)
