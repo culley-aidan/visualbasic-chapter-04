@@ -26,6 +26,7 @@ Partial Class frmSeattle
         Me.lblCostHeading = New System.Windows.Forms.Label()
         Me.lblTicketCount = New System.Windows.Forms.Label()
         Me.lblTotalCost = New System.Windows.Forms.Label()
+        Me.txtTicketCount = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -68,11 +69,21 @@ Partial Class frmSeattle
         Me.lblTotalCost.TabIndex = 3
         Me.lblTotalCost.Text = "Total Cost of Tickets"
         '
+        'txtTicketCount
+        '
+        Me.txtTicketCount.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTicketCount.Location = New System.Drawing.Point(286, 175)
+        Me.txtTicketCount.Name = "txtTicketCount"
+        Me.txtTicketCount.Size = New System.Drawing.Size(30, 27)
+        Me.txtTicketCount.TabIndex = 4
+        Me.txtTicketCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'frmSeattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtTicketCount)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblTicketCount)
         Me.Controls.Add(Me.lblCostHeading)
@@ -88,4 +99,5 @@ Partial Class frmSeattle
     Friend WithEvents lblCostHeading As Label
     Friend WithEvents lblTicketCount As Label
     Friend WithEvents lblTotalCost As Label
+    Friend WithEvents txtTicketCount As TextBox
 End Class
