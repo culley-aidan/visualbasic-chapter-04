@@ -22,17 +22,30 @@ Partial Class frmSeattle
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.lblHeading = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'lblHeading
+        '
+        Me.lblHeading.AutoSize = True
+        Me.lblHeading.Location = New System.Drawing.Point(12, 9)
+        Me.lblHeading.Name = "lblHeading"
+        Me.lblHeading.Size = New System.Drawing.Size(145, 13)
+        Me.lblHeading.TabIndex = 0
+        Me.lblHeading.Text = "Seattle Walking Tour Tickets"
         '
         'frmSeattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmSeattle"
         Me.Text = "Seattle Walking Tour Tickets"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents lblHeading As Label
 End Class
