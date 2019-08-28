@@ -24,4 +24,12 @@ Public Class frmBike
         lblTotalCost.Text = decTotalCost.ToString("C")
     End Sub
 
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' Executes when Clear is clicked
+        ' Displays cost heading clears text property
+
+        lblCostHeading.Text = _cdecPricePerDay.ToString("C") & "per Day"
+        lblTotalCost.Text = ""
+        txtNumberOfDays.Focus()
+    End Sub
 End Class

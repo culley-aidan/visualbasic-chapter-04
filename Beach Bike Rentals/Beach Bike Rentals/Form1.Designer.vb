@@ -118,6 +118,7 @@ Partial Class frmBike
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.Gold
+        Me.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(144, 192)
         Me.btnClear.Name = "btnClear"
