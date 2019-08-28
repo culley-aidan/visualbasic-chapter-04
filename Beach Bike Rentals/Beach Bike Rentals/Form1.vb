@@ -28,6 +28,15 @@ Public Class frmBike
         ' Executes when Clear is clicked
         ' Displays cost heading clears text property
 
+        txtNumberOfDays.Clear()
+        lblTotalCost.Text = ""
+        txtNumberOfDays.Focus()
+    End Sub
+
+    Private Sub FrmBike_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Executes when the form is loaded
+        ' Displays cost heading and clears the text property
+
         lblCostHeading.Text = _cdecPricePerDay.ToString("C") & " per Day"
         lblTotalCost.Text = ""
         txtNumberOfDays.Focus()
