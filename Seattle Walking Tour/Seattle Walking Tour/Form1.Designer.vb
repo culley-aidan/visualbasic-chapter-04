@@ -25,7 +25,7 @@ Partial Class frmSeattle
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblCostHeading = New System.Windows.Forms.Label()
         Me.lblTicketCount = New System.Windows.Forms.Label()
-        Me.lblTotalCost = New System.Windows.Forms.Label()
+        Me.lblTotalLabel = New System.Windows.Forms.Label()
         Me.txtTicketCount = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
@@ -59,15 +59,15 @@ Partial Class frmSeattle
         Me.lblTicketCount.TabIndex = 2
         Me.lblTicketCount.Text = "Enter Number of Tickets: "
         '
-        'lblTotalCost
+        'lblTotalLabel
         '
-        Me.lblTotalCost.AutoSize = True
-        Me.lblTotalCost.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalCost.Location = New System.Drawing.Point(79, 233)
-        Me.lblTotalCost.Name = "lblTotalCost"
-        Me.lblTotalCost.Size = New System.Drawing.Size(164, 21)
-        Me.lblTotalCost.TabIndex = 3
-        Me.lblTotalCost.Text = "Total Cost of Tickets"
+        Me.lblTotalLabel.AutoSize = True
+        Me.lblTotalLabel.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalLabel.Location = New System.Drawing.Point(79, 233)
+        Me.lblTotalLabel.Name = "lblTotalLabel"
+        Me.lblTotalLabel.Size = New System.Drawing.Size(164, 21)
+        Me.lblTotalLabel.TabIndex = 3
+        Me.lblTotalLabel.Text = "Total Cost of Tickets"
         '
         'txtTicketCount
         '
@@ -84,7 +84,7 @@ Partial Class frmSeattle
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.txtTicketCount)
-        Me.Controls.Add(Me.lblTotalCost)
+        Me.Controls.Add(Me.lblTotalLabel)
         Me.Controls.Add(Me.lblTicketCount)
         Me.Controls.Add(Me.lblCostHeading)
         Me.Controls.Add(Me.lblHeading)
@@ -98,6 +98,6 @@ Partial Class frmSeattle
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblCostHeading As Label
     Friend WithEvents lblTicketCount As Label
-    Friend WithEvents lblTotalCost As Label
+    Friend WithEvents lblTotalLabel As Label
     Friend WithEvents txtTicketCount As TextBox
 End Class
