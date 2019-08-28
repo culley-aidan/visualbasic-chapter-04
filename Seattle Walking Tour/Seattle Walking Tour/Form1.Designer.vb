@@ -28,6 +28,7 @@ Partial Class frmSeattle
         Me.lblTotalLabel = New System.Windows.Forms.Label()
         Me.txtTicketCount = New System.Windows.Forms.TextBox()
         Me.lblTotalCost = New System.Windows.Forms.Label()
+        Me.btnCost = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -89,11 +90,22 @@ Partial Class frmSeattle
         Me.lblTotalCost.TabIndex = 5
         Me.lblTotalCost.Text = "$888.8"
         '
+        'btnCost
+        '
+        Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCost.Location = New System.Drawing.Point(45, 316)
+        Me.btnCost.Name = "btnCost"
+        Me.btnCost.Size = New System.Drawing.Size(75, 55)
+        Me.btnCost.TabIndex = 6
+        Me.btnCost.Text = "Display Cost"
+        Me.btnCost.UseVisualStyleBackColor = True
+        '
         'frmSeattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnCost)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.txtTicketCount)
         Me.Controls.Add(Me.lblTotalLabel)
@@ -113,4 +125,5 @@ Partial Class frmSeattle
     Friend WithEvents lblTotalLabel As Label
     Friend WithEvents txtTicketCount As TextBox
     Friend WithEvents lblTotalCost As Label
+    Friend WithEvents btnCost As Button
 End Class
