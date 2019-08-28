@@ -31,13 +31,15 @@ Partial Class frmSeattle
         Me.btnCost = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.picSeattle = New System.Windows.Forms.PictureBox()
+        CType(Me.picSeattle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHeading
         '
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeading.Location = New System.Drawing.Point(12, 33)
+        Me.lblHeading.Location = New System.Drawing.Point(23, 33)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(373, 27)
         Me.lblHeading.TabIndex = 0
@@ -115,18 +117,27 @@ Partial Class frmSeattle
         'btnExit
         '
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(299, 316)
+        Me.btnExit.Location = New System.Drawing.Point(295, 316)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 55)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'picSeattle
+        '
+        Me.picSeattle.Location = New System.Drawing.Point(421, -1)
+        Me.picSeattle.Name = "picSeattle"
+        Me.picSeattle.Size = New System.Drawing.Size(380, 451)
+        Me.picSeattle.TabIndex = 9
+        Me.picSeattle.TabStop = False
+        '
         'frmSeattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.picSeattle)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCost)
@@ -138,6 +149,7 @@ Partial Class frmSeattle
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmSeattle"
         Me.Text = "Seattle Walking Tour Tickets"
+        CType(Me.picSeattle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -152,4 +164,5 @@ Partial Class frmSeattle
     Friend WithEvents btnCost As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents picSeattle As PictureBox
 End Class
