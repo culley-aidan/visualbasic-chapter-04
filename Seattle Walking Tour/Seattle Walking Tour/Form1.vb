@@ -4,5 +4,6 @@
 ' Purpose:  This application calculates and displays the total
 '           cost of a number of tickets
 
+Option Strict On
 Public Class frmSeattle
 End Class
