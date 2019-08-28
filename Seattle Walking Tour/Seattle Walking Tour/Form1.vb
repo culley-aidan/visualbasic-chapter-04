@@ -42,4 +42,11 @@ Public Class frmSeattle
         txtTicketCount.Focus()
     End Sub
 
+    Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        ' Executes when btnExit is cleared
+        ' Exits the program
+
+        Close()
+    End Sub
+
 End Class
