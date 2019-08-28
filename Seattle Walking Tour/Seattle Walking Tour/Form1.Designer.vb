@@ -23,22 +23,34 @@ Partial Class frmSeattle
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblCostHeading = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
         '
         Me.lblHeading.AutoSize = True
-        Me.lblHeading.Location = New System.Drawing.Point(12, 9)
+        Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.Location = New System.Drawing.Point(12, 23)
         Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.Size = New System.Drawing.Size(145, 13)
+        Me.lblHeading.Size = New System.Drawing.Size(373, 27)
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Seattle Walking Tour Tickets"
+        '
+        'lblCostHeading
+        '
+        Me.lblCostHeading.AutoSize = True
+        Me.lblCostHeading.Location = New System.Drawing.Point(101, 159)
+        Me.lblCostHeading.Name = "lblCostHeading"
+        Me.lblCostHeading.Size = New System.Drawing.Size(92, 13)
+        Me.lblCostHeading.TabIndex = 1
+        Me.lblCostHeading.Text = "$14.99 Per Ticket"
         '
         'frmSeattle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblCostHeading)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmSeattle"
         Me.Text = "Seattle Walking Tour Tickets"
@@ -48,4 +60,5 @@ Partial Class frmSeattle
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblCostHeading As Label
 End Class
