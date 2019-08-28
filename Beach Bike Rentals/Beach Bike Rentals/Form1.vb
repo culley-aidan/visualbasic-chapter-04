@@ -32,4 +32,11 @@ Public Class frmBike
         lblTotalCost.Text = ""
         txtNumberOfDays.Focus()
     End Sub
+
+    Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        ' Executes when exit is clicked
+        ' Exits the program
+
+        Close()
+    End Sub
 End Class
