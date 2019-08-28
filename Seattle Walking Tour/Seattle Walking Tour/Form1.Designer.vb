@@ -126,9 +126,11 @@ Partial Class frmSeattle
         '
         'picSeattle
         '
+        Me.picSeattle.Image = Global.Seattle_Walking_Tour.My.Resources.Resources.seattle
         Me.picSeattle.Location = New System.Drawing.Point(421, -1)
         Me.picSeattle.Name = "picSeattle"
         Me.picSeattle.Size = New System.Drawing.Size(380, 451)
+        Me.picSeattle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picSeattle.TabIndex = 9
         Me.picSeattle.TabStop = False
         '
