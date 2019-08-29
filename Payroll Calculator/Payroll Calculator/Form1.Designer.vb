@@ -34,6 +34,7 @@ Partial Class frmPayroll
         Me.lblStateTaxAmount = New System.Windows.Forms.Label()
         Me.lblNetPay = New System.Windows.Forms.Label()
         Me.lblNetPayAmount = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -155,11 +156,22 @@ Partial Class frmPayroll
         Me.lblNetPayAmount.TabIndex = 11
         Me.lblNetPayAmount.Text = "$X.XX "
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.Location = New System.Drawing.Point(39, 350)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(99, 31)
+        Me.btnCalculate.TabIndex = 12
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblNetPayAmount)
         Me.Controls.Add(Me.lblNetPay)
         Me.Controls.Add(Me.lblStateTaxAmount)
@@ -191,4 +203,5 @@ Partial Class frmPayroll
     Friend WithEvents lblStateTaxAmount As Label
     Friend WithEvents lblNetPay As Label
     Friend WithEvents lblNetPayAmount As Label
+    Friend WithEvents btnCalculate As Button
 End Class
