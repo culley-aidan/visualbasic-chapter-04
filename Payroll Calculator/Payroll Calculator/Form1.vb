@@ -4,6 +4,7 @@
 ' Purpose:  This application calculates and displays FICA tax, federal tax, 
 '           and state tax for a two week pay period
 
+Option Strict On
 Public Class frmPayroll
     Private Sub LblHeading_Click(sender As Object, e As EventArgs) Handles lblHeading.Click
 
