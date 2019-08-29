@@ -35,6 +35,7 @@ Partial Class frmPayroll
         Me.lblNetPay = New System.Windows.Forms.Label()
         Me.lblNetPayAmount = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -166,11 +167,22 @@ Partial Class frmPayroll
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(164, 350)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(99, 31)
+        Me.btnClear.TabIndex = 13
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblNetPayAmount)
         Me.Controls.Add(Me.lblNetPay)
@@ -204,4 +216,5 @@ Partial Class frmPayroll
     Friend WithEvents lblNetPay As Label
     Friend WithEvents lblNetPayAmount As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnClear As Button
 End Class
