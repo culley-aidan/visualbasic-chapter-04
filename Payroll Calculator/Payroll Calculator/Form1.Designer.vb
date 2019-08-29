@@ -26,6 +26,7 @@ Partial Class frmPayroll
         Me.lblFICATax = New System.Windows.Forms.Label()
         Me.lblTaxesDeducted = New System.Windows.Forms.Label()
         Me.lblPayCheck = New System.Windows.Forms.Label()
+        Me.txtPayCheck = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -68,11 +69,21 @@ Partial Class frmPayroll
         Me.lblPayCheck.TabIndex = 3
         Me.lblPayCheck.Text = "Biweekly Paycheck Amount:"
         '
+        'txtPayCheck
+        '
+        Me.txtPayCheck.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPayCheck.Location = New System.Drawing.Point(269, 100)
+        Me.txtPayCheck.Name = "txtPayCheck"
+        Me.txtPayCheck.Size = New System.Drawing.Size(66, 27)
+        Me.txtPayCheck.TabIndex = 4
+        Me.txtPayCheck.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.txtPayCheck)
         Me.Controls.Add(Me.lblPayCheck)
         Me.Controls.Add(Me.lblTaxesDeducted)
         Me.Controls.Add(Me.lblFICATax)
@@ -88,4 +99,5 @@ Partial Class frmPayroll
     Friend WithEvents lblFICATax As Label
     Friend WithEvents lblTaxesDeducted As Label
     Friend WithEvents lblPayCheck As Label
+    Friend WithEvents txtPayCheck As TextBox
 End Class
