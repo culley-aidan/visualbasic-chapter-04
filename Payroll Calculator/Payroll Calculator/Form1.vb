@@ -9,5 +9,7 @@ Public Class frmPayroll
 
     ' FICA Tax amount
     Const _ficaTaxPercentage As Decimal = (7.65D / 100)
+    ' Federal Tax amount
+    Const _federalTaxPercentage As Decimal = (22D / 100)
 
 End Class
