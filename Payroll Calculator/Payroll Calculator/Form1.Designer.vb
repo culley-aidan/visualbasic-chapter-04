@@ -28,6 +28,7 @@ Partial Class frmPayroll
         Me.lblPayCheck = New System.Windows.Forms.Label()
         Me.txtPayCheck = New System.Windows.Forms.TextBox()
         Me.lblFICATaxAmount = New System.Windows.Forms.Label()
+        Me.lblFederalTax = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -89,11 +90,22 @@ Partial Class frmPayroll
         Me.lblFICATaxAmount.TabIndex = 5
         Me.lblFICATaxAmount.Text = "$X.XX (XX%)"
         '
+        'lblFederalTax
+        '
+        Me.lblFederalTax.AutoSize = True
+        Me.lblFederalTax.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFederalTax.Location = New System.Drawing.Point(84, 221)
+        Me.lblFederalTax.Name = "lblFederalTax"
+        Me.lblFederalTax.Size = New System.Drawing.Size(103, 21)
+        Me.lblFederalTax.TabIndex = 6
+        Me.lblFederalTax.Text = "Federal Tax:"
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.lblFederalTax)
         Me.Controls.Add(Me.lblFICATaxAmount)
         Me.Controls.Add(Me.txtPayCheck)
         Me.Controls.Add(Me.lblPayCheck)
@@ -113,4 +125,5 @@ Partial Class frmPayroll
     Friend WithEvents lblPayCheck As Label
     Friend WithEvents txtPayCheck As TextBox
     Friend WithEvents lblFICATaxAmount As Label
+    Friend WithEvents lblFederalTax As Label
 End Class
