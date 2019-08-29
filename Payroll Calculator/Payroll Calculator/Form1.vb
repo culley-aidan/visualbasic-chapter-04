@@ -6,7 +6,8 @@
 
 Option Strict On
 Public Class frmPayroll
-    Private Sub LblHeading_Click(sender As Object, e As EventArgs) Handles lblHeading.Click
 
-    End Sub
+    ' FICA Tax amount
+    Const _ficaTaxPercentage As Decimal = (7.65D / 100)
+
 End Class
