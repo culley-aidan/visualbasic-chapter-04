@@ -32,6 +32,7 @@ Partial Class frmPayroll
         Me.lblFederalTaxAmount = New System.Windows.Forms.Label()
         Me.lblStateTax = New System.Windows.Forms.Label()
         Me.lblStateTaxAmount = New System.Windows.Forms.Label()
+        Me.lblNetPay = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -133,11 +134,22 @@ Partial Class frmPayroll
         Me.lblStateTaxAmount.TabIndex = 9
         Me.lblStateTaxAmount.Text = "$X.XX (XX%)"
         '
+        'lblNetPay
+        '
+        Me.lblNetPay.AutoSize = True
+        Me.lblNetPay.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetPay.Location = New System.Drawing.Point(84, 286)
+        Me.lblNetPay.Name = "lblNetPay"
+        Me.lblNetPay.Size = New System.Drawing.Size(75, 21)
+        Me.lblNetPay.TabIndex = 10
+        Me.lblNetPay.Text = "Net Pay:"
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.lblNetPay)
         Me.Controls.Add(Me.lblStateTaxAmount)
         Me.Controls.Add(Me.lblStateTax)
         Me.Controls.Add(Me.lblFederalTaxAmount)
@@ -165,4 +177,5 @@ Partial Class frmPayroll
     Friend WithEvents lblFederalTaxAmount As Label
     Friend WithEvents lblStateTax As Label
     Friend WithEvents lblStateTaxAmount As Label
+    Friend WithEvents lblNetPay As Label
 End Class
