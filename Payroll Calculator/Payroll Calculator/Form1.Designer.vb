@@ -36,6 +36,7 @@ Partial Class frmPayroll
         Me.lblNetPayAmount = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -160,7 +161,7 @@ Partial Class frmPayroll
         'btnCalculate
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(39, 350)
+        Me.btnCalculate.Location = New System.Drawing.Point(30, 350)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(99, 31)
         Me.btnCalculate.TabIndex = 12
@@ -169,19 +170,31 @@ Partial Class frmPayroll
         '
         'btnClear
         '
+        Me.btnClear.Enabled = False
         Me.btnClear.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(164, 350)
+        Me.btnClear.Location = New System.Drawing.Point(155, 350)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(99, 31)
         Me.btnClear.TabIndex = 13
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'btnExit
+        '
+        Me.btnExit.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(280, 350)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(99, 31)
+        Me.btnExit.TabIndex = 14
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblNetPayAmount)
@@ -217,4 +230,5 @@ Partial Class frmPayroll
     Friend WithEvents lblNetPayAmount As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents btnExit As Button
 End Class
