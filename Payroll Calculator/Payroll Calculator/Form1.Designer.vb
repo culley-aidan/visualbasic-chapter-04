@@ -23,6 +23,7 @@ Partial Class frmPayroll
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblFICATax = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -35,11 +36,22 @@ Partial Class frmPayroll
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Payroll Calculator"
         '
+        'lblFICATax
+        '
+        Me.lblFICATax.AutoSize = True
+        Me.lblFICATax.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFICATax.Location = New System.Drawing.Point(355, 80)
+        Me.lblFICATax.Name = "lblFICATax"
+        Me.lblFICATax.Size = New System.Drawing.Size(80, 21)
+        Me.lblFICATax.TabIndex = 1
+        Me.lblFICATax.Text = "FICA Tax"
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblFICATax)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmPayroll"
         Me.Text = "Payroll Calculator"
@@ -49,4 +61,5 @@ Partial Class frmPayroll
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblFICATax As Label
 End Class
