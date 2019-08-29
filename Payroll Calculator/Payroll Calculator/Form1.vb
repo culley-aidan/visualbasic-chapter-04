@@ -57,4 +57,17 @@ Public Class frmPayroll
 
         btnClear.Enabled = False
     End Sub
+
+    Private Sub FrmPayroll_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Executes when the form is loaded
+        ' Clears placeholders
+
+        txtPayCheck.Text = ""
+        lblFICATaxAmount.Text = ""
+        lblFederalTaxAmount.Text = ""
+        lblStateTaxAmount.Text = ""
+        lblNetPayAmount.Text = ""
+
+        txtPayCheck.Focus()
+    End Sub
 End Class
