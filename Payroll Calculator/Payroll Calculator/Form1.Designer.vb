@@ -27,6 +27,7 @@ Partial Class frmPayroll
         Me.lblTaxesDeducted = New System.Windows.Forms.Label()
         Me.lblPayCheck = New System.Windows.Forms.Label()
         Me.txtPayCheck = New System.Windows.Forms.TextBox()
+        Me.lblFICATaxAmount = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -43,17 +44,17 @@ Partial Class frmPayroll
         '
         Me.lblFICATax.AutoSize = True
         Me.lblFICATax.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFICATax.Location = New System.Drawing.Point(84, 240)
+        Me.lblFICATax.Location = New System.Drawing.Point(84, 189)
         Me.lblFICATax.Name = "lblFICATax"
-        Me.lblFICATax.Size = New System.Drawing.Size(80, 21)
+        Me.lblFICATax.Size = New System.Drawing.Size(88, 21)
         Me.lblFICATax.TabIndex = 1
-        Me.lblFICATax.Text = "FICA Tax"
+        Me.lblFICATax.Text = "FICA Tax: "
         '
         'lblTaxesDeducted
         '
         Me.lblTaxesDeducted.AutoSize = True
-        Me.lblTaxesDeducted.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTaxesDeducted.Location = New System.Drawing.Point(125, 189)
+        Me.lblTaxesDeducted.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTaxesDeducted.Location = New System.Drawing.Point(133, 155)
         Me.lblTaxesDeducted.Name = "lblTaxesDeducted"
         Me.lblTaxesDeducted.Size = New System.Drawing.Size(138, 21)
         Me.lblTaxesDeducted.TabIndex = 2
@@ -78,11 +79,22 @@ Partial Class frmPayroll
         Me.txtPayCheck.TabIndex = 4
         Me.txtPayCheck.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'lblFICATaxAmount
+        '
+        Me.lblFICATaxAmount.AutoSize = True
+        Me.lblFICATaxAmount.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFICATaxAmount.Location = New System.Drawing.Point(225, 189)
+        Me.lblFICATaxAmount.Name = "lblFICATaxAmount"
+        Me.lblFICATaxAmount.Size = New System.Drawing.Size(96, 21)
+        Me.lblFICATaxAmount.TabIndex = 5
+        Me.lblFICATaxAmount.Text = "$X.XX (XX%)"
+        '
         'frmPayroll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(404, 461)
+        Me.Controls.Add(Me.lblFICATaxAmount)
         Me.Controls.Add(Me.txtPayCheck)
         Me.Controls.Add(Me.lblPayCheck)
         Me.Controls.Add(Me.lblTaxesDeducted)
@@ -100,4 +112,5 @@ Partial Class frmPayroll
     Friend WithEvents lblTaxesDeducted As Label
     Friend WithEvents lblPayCheck As Label
     Friend WithEvents txtPayCheck As TextBox
+    Friend WithEvents lblFICATaxAmount As Label
 End Class
