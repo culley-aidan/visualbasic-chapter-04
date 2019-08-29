@@ -42,4 +42,19 @@ Public Class frmPayroll
         lblNetPayAmount.Text = String.Format("${0}", decTotal)
         btnClear.Enabled = True
     End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' Executes when btnClear is clicked
+        ' Clears everything
+
+        txtPayCheck.Text = ""
+        lblFICATaxAmount.Text = ""
+        lblFederalTaxAmount.Text = ""
+        lblStateTaxAmount.Text = ""
+        lblNetPayAmount.Text = ""
+
+        txtPayCheck.Focus()
+
+        btnClear.Enabled = False
+    End Sub
 End Class
