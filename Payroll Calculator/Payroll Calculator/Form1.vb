@@ -23,7 +23,10 @@ Public Class frmPayroll
         Dim decTotal As Decimal
 
         strPaycheck = txtPayCheck.Text
-        decPaycheck = Convert.ToInt32(strPaycheck)
+        If Decimal.TryParse(strPaycheck, decPaycheck) = False Then
+            BtnClear_Click(sender, e)
+            Return
+        End If
         decTotal = decPaycheck
 
         Dim ficaTaxDeduction As Decimal = Math.Round(decPaycheck * _ficaTaxPercentage, 2)
