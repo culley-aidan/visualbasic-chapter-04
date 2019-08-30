@@ -90,7 +90,6 @@ Partial Class frmPayroll
         '
         'lblFICATaxAmount
         '
-        Me.lblFICATaxAmount.AutoSize = True
         Me.lblFICATaxAmount.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFICATaxAmount.Location = New System.Drawing.Point(225, 189)
         Me.lblFICATaxAmount.Name = "lblFICATaxAmount"

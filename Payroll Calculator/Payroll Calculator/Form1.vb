@@ -24,6 +24,7 @@ Public Class frmPayroll
 
         strPaycheck = txtPayCheck.Text
         decPaycheck = Convert.ToInt32(strPaycheck)
+        decTotal = decPaycheck
 
         Dim ficaTaxDeduction As Decimal = Math.Round(decPaycheck * _ficaTaxPercentage, 2)
         Dim federalTaxDeduction As Decimal = Math.Round(decPaycheck * _federalTaxPercentage, 2)
@@ -33,7 +34,6 @@ Public Class frmPayroll
         lblFederalTaxAmount.Text = String.Format("${0} ({1}%)", federalTaxDeduction, Math.Round(_federalTaxPercentage * 100, 2))
         lblStateTaxAmount.Text = String.Format("${0} ({1}%)", stateTaxDeduction, Math.Round(_stateTaxPercentage * 100, 2))
 
-        decTotal = decPaycheck
         decTotal -= ficaTaxDeduction
         decTotal -= federalTaxDeduction
         decTotal -= stateTaxDeduction
