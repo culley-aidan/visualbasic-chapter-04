@@ -33,8 +33,7 @@ Public Class frmPayroll
         Dim decPaycheck As Decimal
         Dim decTotal As Decimal
 
-        strPaycheck = txtPayCheck.Text
-        strPaycheck.Replace("$", "")
+        strPaycheck = txtPayCheck.Text.Replace("$", "")
         If Decimal.TryParse(strPaycheck, decPaycheck) = False Then
             Clear()
             Return
