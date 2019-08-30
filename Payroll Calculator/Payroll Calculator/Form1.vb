@@ -14,6 +14,17 @@ Public Class frmPayroll
     ' State tax amount
     Const _stateTaxPercentage As Decimal = (4D / 100)
 
+    Function Clear() As Integer
+        txtPayCheck.Text = ""
+        lblFICATaxAmount.Text = ""
+        lblFederalTaxAmount.Text = ""
+        lblStateTaxAmount.Text = ""
+        lblNetPayAmount.Text = ""
+
+        txtPayCheck.Focus()
+        Return 0
+    End Function
+
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
         ' Executes when btnCalculate is clicked
         ' Calculates the tax deduction 
@@ -24,7 +35,7 @@ Public Class frmPayroll
 
         strPaycheck = txtPayCheck.Text
         If Decimal.TryParse(strPaycheck, decPaycheck) = False Then
-            BtnClear_Click(sender, e)
+            Clear()
             Return
         End If
         decTotal = decPaycheck
@@ -50,14 +61,7 @@ Public Class frmPayroll
         ' Executes when btnClear is clicked
         ' Clears everything
 
-        txtPayCheck.Text = ""
-        lblFICATaxAmount.Text = ""
-        lblFederalTaxAmount.Text = ""
-        lblStateTaxAmount.Text = ""
-        lblNetPayAmount.Text = ""
-
-        txtPayCheck.Focus()
-
+        Clear()
         btnClear.Enabled = False
     End Sub
 
@@ -65,13 +69,7 @@ Public Class frmPayroll
         ' Executes when the form is loaded
         ' Clears placeholders
 
-        txtPayCheck.Text = ""
-        lblFICATaxAmount.Text = ""
-        lblFederalTaxAmount.Text = ""
-        lblStateTaxAmount.Text = ""
-        lblNetPayAmount.Text = ""
-
-        txtPayCheck.Focus()
+        Clear()
     End Sub
 
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
