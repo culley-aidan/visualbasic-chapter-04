@@ -5,4 +5,4 @@ Visual Basic Programming 1, Chapter 4
 - [x] Guided Program – Beach Bike Rentals
 - [x] 2 – Seattle Walking Tour
 - [x] 4 – Payroll Calculator
-- [ ] 6 – Fitness Tracker App
+- [x] 6 – Fitness Tracker App
