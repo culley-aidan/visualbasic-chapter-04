@@ -7,12 +7,26 @@
 Option Strict On
 Public Class frmFitnessTracker
 
-    Const year As Integer = 365
-    Const month As Integer = 30
     Const averageExercise As Decimal = 2.5D
 
-    Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+    Function Clear() As Integer
+        lblExercisedFor.Text = ""
+        lblExercisedFor.Visible = False
+        dtpBirthday.Value = DateTime.UtcNow()
+        dtpCurrent.Value = DateTime.UtcNow()
+        btnClear.Enabled = False
+        Return 0
+    End Function
 
+    Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+        Dim name As String = txtName.Text
+        Dim birthdayDateTime As DateTime = dtpBirthday.Value
+        Dim currentDate As DateTime = dtpCurrent.Value
+        Dim timeSpan As TimeSpan = currentDate.Subtract(birthdayDateTime)
+        Dim hoursExercised As Double = Math.Round((timeSpan.TotalDays / 7) * averageExercise, 1)
+
+        lblExercisedFor.Text = String.Format("{0} has exercised for a total of {1} hours. Congrats!", name, hoursExercised)
+        lblExercisedFor.Visible = True
     End Sub
 
     Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click

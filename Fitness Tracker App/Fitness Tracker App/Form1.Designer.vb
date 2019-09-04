@@ -117,7 +117,7 @@ Partial Class frmFitnessTracker
         '
         Me.lblExercisedFor.AutoSize = True
         Me.lblExercisedFor.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblExercisedFor.Location = New System.Drawing.Point(249, 258)
+        Me.lblExercisedFor.Location = New System.Drawing.Point(240, 265)
         Me.lblExercisedFor.Name = "lblExercisedFor"
         Me.lblExercisedFor.Size = New System.Drawing.Size(348, 21)
         Me.lblExercisedFor.TabIndex = 14
