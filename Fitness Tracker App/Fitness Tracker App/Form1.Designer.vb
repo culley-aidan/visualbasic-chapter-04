@@ -26,6 +26,7 @@ Partial Class frmFitnessTracker
         Me.lblName = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblBirthday = New System.Windows.Forms.Label()
+        Me.txtMonth = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -60,17 +61,28 @@ Partial Class frmFitnessTracker
         '
         Me.lblBirthday.AutoSize = True
         Me.lblBirthday.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBirthday.Location = New System.Drawing.Point(271, 112)
+        Me.lblBirthday.Location = New System.Drawing.Point(249, 110)
         Me.lblBirthday.Name = "lblBirthday"
         Me.lblBirthday.Size = New System.Drawing.Size(186, 21)
         Me.lblBirthday.TabIndex = 3
         Me.lblBirthday.Text = "What is your birthday?:"
+        '
+        'txtMonth
+        '
+        Me.txtMonth.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMonth.Location = New System.Drawing.Point(441, 107)
+        Me.txtMonth.Name = "txtMonth"
+        Me.txtMonth.Size = New System.Drawing.Size(33, 27)
+        Me.txtMonth.TabIndex = 4
+        Me.txtMonth.Text = "08"
+        Me.txtMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtMonth)
         Me.Controls.Add(Me.lblBirthday)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lblName)
@@ -86,4 +98,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents lblName As Label
     Friend WithEvents txtName As TextBox
     Friend WithEvents lblBirthday As Label
+    Friend WithEvents txtMonth As TextBox
 End Class
