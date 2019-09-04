@@ -23,6 +23,7 @@ Partial Class frmFitnessTracker
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -35,11 +36,22 @@ Partial Class frmFitnessTracker
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Fitness Tracker App"
         '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(269, 73)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(166, 21)
+        Me.lblName.TabIndex = 1
+        Me.lblName.Text = "What is your name?:"
+        '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmFitnessTracker"
         Me.Text = "Fitness Tracker App"
@@ -49,4 +61,5 @@ Partial Class frmFitnessTracker
     End Sub
 
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblName As Label
 End Class
