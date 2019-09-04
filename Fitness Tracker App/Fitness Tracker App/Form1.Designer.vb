@@ -33,6 +33,7 @@ Partial Class frmFitnessTracker
         Me.txtCurrentMonth = New System.Windows.Forms.TextBox()
         Me.txtCurrentDay = New System.Windows.Forms.TextBox()
         Me.txtCurrentYear = New System.Windows.Forms.TextBox()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -107,7 +108,7 @@ Partial Class frmFitnessTracker
         '
         Me.lblCurrentDate.AutoSize = True
         Me.lblCurrentDate.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCurrentDate.Location = New System.Drawing.Point(221, 146)
+        Me.lblCurrentDate.Location = New System.Drawing.Point(221, 149)
         Me.lblCurrentDate.Name = "lblCurrentDate"
         Me.lblCurrentDate.Size = New System.Drawing.Size(214, 21)
         Me.lblCurrentDate.TabIndex = 7
@@ -143,11 +144,22 @@ Partial Class frmFitnessTracker
         Me.txtCurrentYear.Text = "yyyy"
         Me.txtCurrentYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.Location = New System.Drawing.Point(213, 230)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(108, 35)
+        Me.btnCalculate.TabIndex = 11
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.txtCurrentYear)
         Me.Controls.Add(Me.txtCurrentDay)
         Me.Controls.Add(Me.txtCurrentMonth)
@@ -177,4 +189,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents txtCurrentMonth As TextBox
     Friend WithEvents txtCurrentDay As TextBox
     Friend WithEvents txtCurrentYear As TextBox
+    Friend WithEvents btnCalculate As Button
 End Class
