@@ -32,6 +32,7 @@ Partial Class frmFitnessTracker
         Me.lblCurrentDate = New System.Windows.Forms.Label()
         Me.txtCurrentMonth = New System.Windows.Forms.TextBox()
         Me.txtCurrentDay = New System.Windows.Forms.TextBox()
+        Me.txtCurrentYear = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -132,11 +133,22 @@ Partial Class frmFitnessTracker
         Me.txtCurrentDay.Text = "dd"
         Me.txtCurrentDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'txtCurrentYear
+        '
+        Me.txtCurrentYear.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCurrentYear.Location = New System.Drawing.Point(535, 146)
+        Me.txtCurrentYear.Name = "txtCurrentYear"
+        Me.txtCurrentYear.Size = New System.Drawing.Size(49, 27)
+        Me.txtCurrentYear.TabIndex = 10
+        Me.txtCurrentYear.Text = "yyyy"
+        Me.txtCurrentYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtCurrentYear)
         Me.Controls.Add(Me.txtCurrentDay)
         Me.Controls.Add(Me.txtCurrentMonth)
         Me.Controls.Add(Me.lblCurrentDate)
@@ -164,4 +176,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents lblCurrentDate As Label
     Friend WithEvents txtCurrentMonth As TextBox
     Friend WithEvents txtCurrentDay As TextBox
+    Friend WithEvents txtCurrentYear As TextBox
 End Class
