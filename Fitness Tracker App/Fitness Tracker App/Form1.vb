@@ -1,15 +1,14 @@
 ﻿Public Class frmFitnessTracker
+    Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
-    Private Sub TxtBirthMonth_MouseClick(sender As Object, e As EventArgs) Handles txtBirthMonth.MouseClick
-        txtBirthMonth.Text = ""
     End Sub
 
-    Private Sub TxtBirthDay_MouseClick(sender As Object, e As EventArgs) Handles txtBirthDay.MouseClick
-        txtBirthDay.Text = ""
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+
     End Sub
 
-    Private Sub TxtBirthYear_MouseClick(sender As Object, e As EventArgs) Handles txtBirthYear.MouseClick
-        txtBirthYear.Text = ""
+    Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+
     End Sub
 
     Private Sub FrmFitnessTracker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
