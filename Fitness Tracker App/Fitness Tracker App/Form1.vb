@@ -1,4 +1,11 @@
-﻿Public Class frmFitnessTracker
+﻿' Program:  Fitness Tracker App
+' Author:   Aidan J Culley
+' Date:     September 4th, 2019
+' Purpose:  This application calculates and displays exercise
+'           hours
+
+Option Strict On
+Public Class frmFitnessTracker
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
     End Sub
