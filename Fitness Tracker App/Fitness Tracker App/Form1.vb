@@ -12,6 +12,7 @@ Public Class frmFitnessTracker
     Function Clear() As Integer
         lblExercisedFor.Text = ""
         lblExercisedFor.Visible = False
+        txtName.Text = ""
         dtpBirthday.Value = DateTime.UtcNow()
         dtpCurrent.Value = DateTime.UtcNow()
         btnClear.Enabled = False
@@ -30,14 +31,14 @@ Public Class frmFitnessTracker
     End Sub
 
     Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-
+        Clear()
     End Sub
 
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-
+        Close()
     End Sub
 
     Private Sub FrmFitnessTracker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Clear()
     End Sub
 End Class
