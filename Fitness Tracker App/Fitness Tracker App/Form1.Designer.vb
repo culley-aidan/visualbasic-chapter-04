@@ -27,6 +27,7 @@ Partial Class frmFitnessTracker
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblBirthday = New System.Windows.Forms.Label()
         Me.txtMonth = New System.Windows.Forms.TextBox()
+        Me.txtDay = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -77,11 +78,22 @@ Partial Class frmFitnessTracker
         Me.txtMonth.Text = "08"
         Me.txtMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'txtDay
+        '
+        Me.txtDay.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDay.Location = New System.Drawing.Point(481, 107)
+        Me.txtDay.Name = "txtDay"
+        Me.txtDay.Size = New System.Drawing.Size(33, 27)
+        Me.txtDay.TabIndex = 5
+        Me.txtDay.Text = "18"
+        Me.txtDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtDay)
         Me.Controls.Add(Me.txtMonth)
         Me.Controls.Add(Me.lblBirthday)
         Me.Controls.Add(Me.txtName)
@@ -99,4 +111,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents txtName As TextBox
     Friend WithEvents lblBirthday As Label
     Friend WithEvents txtMonth As TextBox
+    Friend WithEvents txtDay As TextBox
 End Class
