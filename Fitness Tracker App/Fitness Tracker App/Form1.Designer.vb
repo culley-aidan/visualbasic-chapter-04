@@ -34,6 +34,7 @@ Partial Class frmFitnessTracker
         Me.txtCurrentDay = New System.Windows.Forms.TextBox()
         Me.txtCurrentYear = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -147,18 +148,29 @@ Partial Class frmFitnessTracker
         'btnCalculate
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(213, 230)
+        Me.btnCalculate.Location = New System.Drawing.Point(235, 233)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(108, 35)
         Me.btnCalculate.TabIndex = 11
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(374, 233)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(108, 35)
+        Me.btnClear.TabIndex = 12
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.txtCurrentYear)
         Me.Controls.Add(Me.txtCurrentDay)
@@ -190,4 +202,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents txtCurrentDay As TextBox
     Friend WithEvents txtCurrentYear As TextBox
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnClear As Button
 End Class
