@@ -27,7 +27,7 @@ Partial Class frmFitnessTracker
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblBirthday = New System.Windows.Forms.Label()
         Me.txtBirthMonth = New System.Windows.Forms.TextBox()
-        Me.txtDay = New System.Windows.Forms.TextBox()
+        Me.txtBirthDay = New System.Windows.Forms.TextBox()
         Me.txtYear = New System.Windows.Forms.TextBox()
         Me.lblCurrentDate = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -80,15 +80,15 @@ Partial Class frmFitnessTracker
         Me.txtBirthMonth.Text = "mm"
         Me.txtBirthMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtDay
+        'txtBirthDay
         '
-        Me.txtDay.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDay.Location = New System.Drawing.Point(488, 107)
-        Me.txtDay.Name = "txtDay"
-        Me.txtDay.Size = New System.Drawing.Size(41, 27)
-        Me.txtDay.TabIndex = 5
-        Me.txtDay.Text = "dd"
-        Me.txtDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBirthDay.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBirthDay.Location = New System.Drawing.Point(488, 107)
+        Me.txtBirthDay.Name = "txtBirthDay"
+        Me.txtBirthDay.Size = New System.Drawing.Size(41, 27)
+        Me.txtBirthDay.TabIndex = 5
+        Me.txtBirthDay.Text = "dd"
+        Me.txtBirthDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtYear
         '
@@ -117,7 +117,7 @@ Partial Class frmFitnessTracker
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lblCurrentDate)
         Me.Controls.Add(Me.txtYear)
-        Me.Controls.Add(Me.txtDay)
+        Me.Controls.Add(Me.txtBirthDay)
         Me.Controls.Add(Me.txtBirthMonth)
         Me.Controls.Add(Me.lblBirthday)
         Me.Controls.Add(Me.txtName)
@@ -135,7 +135,7 @@ Partial Class frmFitnessTracker
     Friend WithEvents txtName As TextBox
     Friend WithEvents lblBirthday As Label
     Friend WithEvents txtBirthMonth As TextBox
-    Friend WithEvents txtDay As TextBox
+    Friend WithEvents txtBirthDay As TextBox
     Friend WithEvents txtYear As TextBox
     Friend WithEvents lblCurrentDate As Label
 End Class
