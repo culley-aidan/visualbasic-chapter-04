@@ -6,6 +6,11 @@
 
 Option Strict On
 Public Class frmFitnessTracker
+
+    Const year As Integer = 365
+    Const month As Integer = 30
+    Const averageExercise As Decimal = 2.5D
+
     Private Sub BtnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
     End Sub
