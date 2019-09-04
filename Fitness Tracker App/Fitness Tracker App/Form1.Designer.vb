@@ -35,6 +35,7 @@ Partial Class frmFitnessTracker
         Me.txtCurrentYear = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -148,7 +149,7 @@ Partial Class frmFitnessTracker
         'btnCalculate
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(235, 233)
+        Me.btnCalculate.Location = New System.Drawing.Point(218, 363)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(108, 35)
         Me.btnCalculate.TabIndex = 11
@@ -158,18 +159,29 @@ Partial Class frmFitnessTracker
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(374, 233)
+        Me.btnClear.Location = New System.Drawing.Point(365, 363)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(108, 35)
         Me.btnClear.TabIndex = 12
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'btnExit
+        '
+        Me.btnExit.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(507, 363)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(108, 35)
+        Me.btnExit.TabIndex = 13
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.txtCurrentYear)
@@ -203,4 +215,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents txtCurrentYear As TextBox
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents btnExit As Button
 End Class
