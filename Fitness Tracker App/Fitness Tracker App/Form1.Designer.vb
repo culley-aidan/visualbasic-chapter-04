@@ -30,6 +30,7 @@ Partial Class frmFitnessTracker
         Me.txtBirthDay = New System.Windows.Forms.TextBox()
         Me.txtBirthYear = New System.Windows.Forms.TextBox()
         Me.lblCurrentDate = New System.Windows.Forms.Label()
+        Me.txtCurrentMonth = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -110,11 +111,22 @@ Partial Class frmFitnessTracker
         Me.lblCurrentDate.TabIndex = 7
         Me.lblCurrentDate.Text = "What is the current date?:"
         '
+        'txtCurrentMonth
+        '
+        Me.txtCurrentMonth.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCurrentMonth.Location = New System.Drawing.Point(441, 146)
+        Me.txtCurrentMonth.Name = "txtCurrentMonth"
+        Me.txtCurrentMonth.Size = New System.Drawing.Size(41, 27)
+        Me.txtCurrentMonth.TabIndex = 8
+        Me.txtCurrentMonth.Text = "mm"
+        Me.txtCurrentMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtCurrentMonth)
         Me.Controls.Add(Me.lblCurrentDate)
         Me.Controls.Add(Me.txtBirthYear)
         Me.Controls.Add(Me.txtBirthDay)
@@ -138,4 +150,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents txtBirthDay As TextBox
     Friend WithEvents txtBirthYear As TextBox
     Friend WithEvents lblCurrentDate As Label
+    Friend WithEvents txtCurrentMonth As TextBox
 End Class
