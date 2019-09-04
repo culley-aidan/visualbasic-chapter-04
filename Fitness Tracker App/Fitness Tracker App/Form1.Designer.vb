@@ -28,6 +28,7 @@ Partial Class frmFitnessTracker
         Me.lblBirthday = New System.Windows.Forms.Label()
         Me.txtMonth = New System.Windows.Forms.TextBox()
         Me.txtDay = New System.Windows.Forms.TextBox()
+        Me.txtYear = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -73,26 +74,37 @@ Partial Class frmFitnessTracker
         Me.txtMonth.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMonth.Location = New System.Drawing.Point(441, 107)
         Me.txtMonth.Name = "txtMonth"
-        Me.txtMonth.Size = New System.Drawing.Size(33, 27)
+        Me.txtMonth.Size = New System.Drawing.Size(41, 27)
         Me.txtMonth.TabIndex = 4
-        Me.txtMonth.Text = "08"
+        Me.txtMonth.Text = "mm"
         Me.txtMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtDay
         '
         Me.txtDay.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDay.Location = New System.Drawing.Point(481, 107)
+        Me.txtDay.Location = New System.Drawing.Point(488, 107)
         Me.txtDay.Name = "txtDay"
-        Me.txtDay.Size = New System.Drawing.Size(33, 27)
+        Me.txtDay.Size = New System.Drawing.Size(41, 27)
         Me.txtDay.TabIndex = 5
-        Me.txtDay.Text = "18"
+        Me.txtDay.Text = "dd"
         Me.txtDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtYear
+        '
+        Me.txtYear.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtYear.Location = New System.Drawing.Point(535, 107)
+        Me.txtYear.Name = "txtYear"
+        Me.txtYear.Size = New System.Drawing.Size(49, 27)
+        Me.txtYear.TabIndex = 6
+        Me.txtYear.Text = "yyyy"
+        Me.txtYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'frmFitnessTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtYear)
         Me.Controls.Add(Me.txtDay)
         Me.Controls.Add(Me.txtMonth)
         Me.Controls.Add(Me.lblBirthday)
@@ -112,4 +124,5 @@ Partial Class frmFitnessTracker
     Friend WithEvents lblBirthday As Label
     Friend WithEvents txtMonth As TextBox
     Friend WithEvents txtDay As TextBox
+    Friend WithEvents txtYear As TextBox
 End Class
